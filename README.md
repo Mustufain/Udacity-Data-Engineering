@@ -28,7 +28,7 @@ These simulate activity logs from a music streaming app based on specified confi
 - Fact table : song plays
 - Dimension Table: time, users, artists, songs.
 
-![Star schema](Lesson2_Data_Modelling/Postgres_Data_Modelling/images/Untitled Diagram.png)
+![Star schema](https://github.com/Mustufain/Udacity-Data-Engineering/blob/master/Lesson2_Data_Modelling/Postgres_Data_Modelling/images/Untitled%20Diagram.png)
 
 Instructions
 -
