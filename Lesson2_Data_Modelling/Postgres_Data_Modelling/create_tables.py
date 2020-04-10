@@ -7,7 +7,8 @@ def create_database():
     - Creates and connects to the sparkifydb
     - Returns the connection and cursor to sparkifydb
     """
-    
+
+    conn = psycopg2.connect("host=127.0.0.1 dbname=studentdb user=student password=student")
     # connect to default database
     conn = psycopg2.connect("host=127.0.0.1 dbname=studentdb user=student password=student")
     conn.set_session(autocommit=True)
@@ -41,9 +42,11 @@ def create_tables(cur, conn):
     Creates each table using the queries in `create_table_queries` list. 
     """
     for query in create_table_queries:
-        cur.execute(query)
-        conn.commit()
-
+        try:
+            cur.execute(query)
+            conn.commit()
+        except Exception as e:
+            print (e)
 
 def main():
     """
