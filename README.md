@@ -30,6 +30,13 @@ These simulate activity logs from a music streaming app based on specified confi
 
 ![Star schema](https://github.com/Mustufain/Udacity-Data-Engineering/blob/master/Lesson2_Data_Modelling/Postgres_Data_Modelling/images/Untitled%20Diagram.png)
 
+
+The project contains the following files :
+- create_tables.py : *creates fact and dimension tables*
+- sql_queries.py : *sql queries for creating tables and inserting records*
+- etl.py : *transforms raw data into fact and dimension tables*
+
+
 Instructions
 -
 - Setup your local postgres instance **CREATE ROLE student WITH LOGIN PASSWORD 'student';**
